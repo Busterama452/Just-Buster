@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard "Buster" Christenson II | Profile & Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0B132B',
+                            800: '#1C2541',
+                            700: '#2A3459',
+                        },
+                        amber: {
+                            gold: '#D4AF37',
+                            accent: '#F59E0B',
+                            light: '#FBBF24'
+                        },
+                        slate: {
+                            850: '#151E2E',
+                            950: '#070A12'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar and glassmorphism styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B132B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A3459;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+        
+        .glass-card {
+            background: rgba(28, 37, 65, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FBBF24 0%, #D4AF37 50%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%);
+        }
+
+        .active-tab {
+            background-color: #D4AF37 !important;
+            color: #0B132B !important;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-amber-gold selection:text-navy-900">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-navy-900/80 backdrop-blur-md border-b border-navy-700/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand / Initials -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl gold-gradient-bg flex items-center justify-center font-heading font-bold text-navy-900 text-lg shadow-lg shadow-amber-gold/20">
+                        RC
+                    </div>
+                    <div>
+                        <span class="font-heading font-bold text-lg tracking-tight block">Richard Christenson II</span>
+                        <span class="text-xs text-amber-gold/90 font-medium tracking-wide uppercase">IT Director & Veteran</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-slate-300 hover:text-amber-gold transition-colors">About</a>
+                    <a href="#hobbies" class="text-slate-300 hover:text-amber-gold transition-colors">Passions & Hobbies</a>
+                    <a href="#projects" class="text-slate-300 hover:text-amber-gold transition-colors">Technical Pursuits</a>
+                    <a href="#community" class="text-slate-300 hover:text-amber-gold transition-colors">Community Impact</a>
+                </nav>
+
+                <!-- Quick Badge / Location -->
+                <div class="hidden sm:flex items-center gap-2 bg-navy-800/80 border border-navy-700 px-3 py-1.5 rounded-full text-xs text-slate-300">
+                    <i class="fa-solid fa-location-dot text-amber-gold"></i>
+                    <span>Queen Creek, AZ</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section id="about" class="relative py-16 lg:py-24 overflow-hidden border-b border-navy-800/60">
+            <!-- Background Glow Decor -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-10 right-10 w-80 h-80 bg-navy-700/30 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Bio Content -->
+                    <div class="lg:col-span-8 space-y-6">
+                        <!-- Badges -->
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-gold/10 border border-amber-gold/30 text-amber-gold">
+                                <i class="fa-solid fa-shield-halved"></i> U.S. Air Force Veteran
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-navy-800 border border-navy-700 text-slate-300">
+                                <i class="fa-solid fa-microchip"></i> Modernization Leader
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-navy-800 border border-navy-700 text-slate-300">
+                                <i class="fa-solid fa-hand-holding-heart text-rose-400"></i> Non-Profit Board Member
+                            </span>
+                        </div>
+
+                        <!-- Name & Main Title -->
+                        <div>
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white tracking-tight">
+                                Richard <span class="gold-gradient-text">"Buster"</span> Christenson II
+                            </h1>
+                            <p class="text-xl sm:text-2xl font-medium text-amber-gold/90 mt-2">
+                                IT Director & Strategic Technology Leader
+                            </p>
+                            <p class="text-sm text-slate-400 font-medium">Director of Finance Data Strategy & Modernization</p>
+                        </div>
+
+                        <!-- Narrative Summary -->
+                        <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+                            A U.S. Air Force Veteran of Operation Desert Shield and Desert Storm, Buster combines decades of strategic IT leadership with a continuous passion for enterprise data modernization. Based in Queen Creek, Arizona, he balances high-impact corporate technology initiatives with rugged outdoor adventure, community advocacy for fellow veterans, and rich family life.
+                        </p>
+
+                        <!-- Highlights Grid -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
+                            <div class="bg-navy-900/60 border border-navy-800 p-4 rounded-xl">
+                                <div class="text-amber-gold text-lg mb-1"><i class="fa-solid fa-jet-fighter"></i></div>
+                                <div class="font-heading font-bold text-white text-base">Desert Storm</div>
+                                <div class="text-xs text-slate-400">USAF Service Legacy</div>
+                            </div>
+                            <div class="bg-navy-900/60 border border-navy-800 p-4 rounded-xl">
+                                <div class="text-amber-gold text-lg mb-1"><i class="fa-solid fa-motorcycle"></i></div>
+                                <div class="font-heading font-bold text-white text-base">ADV & Dual-Sport</div>
+                                <div class="text-xs text-slate-400">KTM 890 & BMW GS</div>
+                            </div>
+                            <div class="bg-navy-900/60 border border-navy-800 p-4 rounded-xl col-span-2 sm:col-span-1">
+                                <div class="text-amber-gold text-lg mb-1"><i class="fa-solid fa-database"></i></div>
+                                <div class="font-heading font-bold text-white text-base">Data Strategy</div>
+                                <div class="text-xs text-slate-400">Finance & Tech Architect</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Profile Card / Quick Info -->
+                    <div class="lg:col-span-4">
+                        <div class="glass-card p-6 rounded-2xl shadow-2xl relative overflow-hidden">
+                            <div class="w-24 h-24 rounded-2xl gold-gradient-bg mx-auto flex items-center justify-center text-navy-900 font-heading text-3xl font-bold shadow-xl mb-4">
+                                RBC II
+                            </div>
+
+                            <div class="text-center mb-6">
+                                <h3 class="font-heading font-bold text-lg text-white">Richard Christenson II</h3>
+                                <p class="text-xs text-amber-gold font-medium">Strategic IT Executive & Advocate</p>
+                            </div>
+
+                            <div class="space-y-3 text-sm border-t border-navy-700/60 pt-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-400"><i class="fa-solid fa-location-arrow text-amber-gold w-5"></i> Region</span>
+                                    <span class="text-slate-200 font-medium">Queen Creek, AZ</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-400"><i class="fa-solid fa-ribbon text-amber-gold w-5"></i> Military</span>
+                                    <span class="text-slate-200 font-medium">USAF Desert Storm</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-400"><i class="fa-solid fa-heart-pulse text-amber-gold w-5"></i> Cause</span>
+                                    <span class="text-slate-200 font-medium">Motorcycle Relief Project</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-400"><i class="fa-solid fa-truck-monster text-amber-gold w-5"></i> Rig</span>
+                                    <span class="text-slate-200 font-medium">2026 Ram 2500 Rebel</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 pt-4 border-t border-navy-700/60 flex justify-center gap-4 text-slate-300 text-lg">
+                                <a href="#community" class="w-10 h-10 rounded-lg bg-navy-800 hover:bg-amber-gold hover:text-navy-900 flex items-center justify-center transition-all" title="Motorcycle Relief Project Board">
+                                    <i class="fa-solid fa-hands-holding-circle"></i>
+                                </a>
+                                <a href="#projects" class="w-10 h-10 rounded-lg bg-navy-800 hover:bg-amber-gold hover:text-navy-900 flex items-center justify-center transition-all" title="PWA & Technical Projects">
+                                    <i class="fa-solid fa-code"></i>
+                                </a>
+                                <a href="#hobbies" class="w-10 h-10 rounded-lg bg-navy-800 hover:bg-amber-gold hover:text-navy-900 flex items-center justify-center transition-all" title="Outdoor & Riding Pursuits">
+                                    <i class="fa-solid fa-compass"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Passions & Hobbies Section -->
+        <section id="hobbies" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-3xl font-heading font-extrabold text-white sm:text-4xl">
+                    Core Passions & <span class="gold-gradient-text">Lifestyle Pursuits</span>
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">
+                    Explore the multifaceted hobbies, off-road adventures, non-profit commitment, and culinary craft that define Buster's life outside the corporate boardroom.
+                </p>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+                    <button onclick="filterHobbies('all')" id="btn-all" class="hobby-filter-btn active-tab px-4 py-2 rounded-lg text-xs font-semibold bg-navy-800 text-slate-300 hover:text-white transition-all">
+                        All Pursuits
+                    </button>
+                    <button onclick="filterHobbies('adventure')" id="btn-adventure" class="hobby-filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-navy-800 text-slate-300 hover:text-white transition-all">
+                        <i class="fa-solid fa-motorcycle mr-1 text-amber-gold"></i> Adventure & Off-Road
+                    </button>
+                    <button onclick="filterHobbies('community')" id="btn-community" class="hobby-filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-navy-800 text-slate-300 hover:text-white transition-all">
+                        <i class="fa-solid fa-handshake-angle mr-1 text-amber-gold"></i> Non-Profit & Military
+                    </button>
+                    <button onclick="filterHobbies('lifestyle')" id="btn-lifestyle" class="hobby-filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-navy-800 text-slate-300 hover:text-white transition-all">
+                        <i class="fa-solid fa-fire-burner mr-1 text-amber-gold"></i> Culinary & Home
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hobby Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Hobby 1: Dual Sport -->
+                <div class="hobby-card glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1" data-category="adventure">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-gold/10 border border-amber-gold/30 text-amber-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Dual-Sport & ADV Motorcycling</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Navigating challenging off-road itineraries and multi-day backcountry trail routes. Focused on technical terrain mastery and remote navigation.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-navy-700/60">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-amber-gold">KTM 890 Adventure R</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">BMW GS Series</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">GPS Logging</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobby 2: Non-Profit -->
+                <div class="hobby-card glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1" data-category="community">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-gold/10 border border-amber-gold/30 text-amber-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-ribbon"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Motorcycle Relief Project</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Serving as a dedicated Board Member for the 501(c)(3) organization. Advocating and organizing multi-day relief rides to support veterans and first responders dealing with PTSD.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-navy-700/60">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-amber-gold">501(c)(3) Board</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">Veteran Support</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">Relief Rides</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobby 3: Off-Roading -->
+                <div class="hobby-card glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1" data-category="adventure">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-gold/10 border border-amber-gold/30 text-amber-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-truck-monster"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Desert Off-Roading</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Exploring the rugged desert trails and mountain passes of the American Southwest with family and friends in a high-capability SxS vehicle.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-navy-700/60">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-amber-gold">Yamaha Wolverine RMAX4 1000</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">Desert Overland</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobby 4: Outdoor Cooking -->
+                <div class="hobby-card glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1" data-category="lifestyle">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-gold/10 border border-amber-gold/30 text-amber-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Pitmaster & Outdoor Grilling</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Crafting low-and-slow smoked meats, perfecting signature BBQ techniques, and preparing custom specialized ham glazes for family gatherings.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-navy-700/60">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-amber-gold">Smoked Meats</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">Custom Glazes</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">Grilling Host</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobby 5: Aviation & History -->
+                <div class="hobby-card glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1" data-category="community">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-gold/10 border border-amber-gold/30 text-amber-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-plane-tail"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Aviation & Military History</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Passionate visitor of air & space museums, student of military tactics, and avid listener of deep-dive podcasts like Dan Carlin's <em>Hardcore History</em>.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-navy-700/60">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-amber-gold">Hardcore History</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">Aviation Museums</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobby 6: Home & Dogs -->
+                <div class="hobby-card glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1" data-category="lifestyle">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-gold/10 border border-amber-gold/30 text-amber-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-dog"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Family & Home Life</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Enjoying life with his wife Chantel, working on pool and home improvements, listening to country music, and caring for their 3 dogs.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 pt-3 border-t border-navy-700/60">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-amber-gold">Milli (Yorkie)</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">Holly (Doodle)</span>
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-navy-900 border border-navy-700 text-slate-300">Frank (Bernadoodle)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical Pursuits & Projects Section -->
+        <section id="projects" class="py-16 bg-navy-900/40 border-y border-navy-800/80">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-amber-gold font-semibold text-xs tracking-wider uppercase">Strategic Projects</span>
+                        <h2 class="text-3xl font-heading font-extrabold text-white sm:text-4xl mt-1">
+                            Technical Pursuits & Builds
+                        </h2>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-md mt-3 md:mt-0">
+                        Bridging full-stack modern software architectures, enterprise data modernization, and hands-on utility vehicle upgrades.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project 1: PWA Ride Tracking -->
+                    <div class="bg-navy-800/50 border border-navy-700 rounded-2xl p-6 flex flex-col justify-between hover:border-amber-gold/40 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-2.5 py-1 rounded text-xs font-semibold bg-amber-gold/20 text-amber-gold border border-amber-gold/30">PWA Application</span>
+                                <i class="fa-solid fa-mobile-screen-button text-slate-400"></i>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold text-white mb-2">Non-Profit Ride Tracking PWA</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Developing a progressive mobile application designed specifically for event logisticians and ride leaders. Features real-time GPS route logging, offline caching, and instant group updates.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">React</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">Expo</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">Firebase</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">Firestore</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">GPS Logging</span>
+                            </div>
+                            <div class="text-xs text-amber-gold font-medium flex items-center gap-1">
+                                <span>Purpose-built for Motorcycle Relief Rides</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Vehicle Outfitting -->
+                    <div class="bg-navy-800/50 border border-navy-700 rounded-2xl p-6 flex flex-col justify-between hover:border-amber-gold/40 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-2.5 py-1 rounded text-xs font-semibold bg-amber-gold/20 text-amber-gold border border-amber-gold/30">Automotive Build</span>
+                                <i class="fa-solid fa-truck text-slate-400"></i>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold text-white mb-2">Ram 2500 Rebel Customization</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Planning and implementing custom heavy-duty utility upgrades for a 2026 Ram 2500 Rebel. Configured for hauling dual-sport motorcycles and towing off-road rigs over long distances.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">2026 Ram 2500 Rebel</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">Heavy Towing</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">Overland Storage</span>
+                            </div>
+                            <div class="text-xs text-amber-gold font-medium flex items-center gap-1">
+                                <span>Long-Distance Overland Ready</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Linux & GIS Workflows -->
+                    <div class="bg-navy-800/50 border border-navy-700 rounded-2xl p-6 flex flex-col justify-between hover:border-amber-gold/40 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-2.5 py-1 rounded text-xs font-semibold bg-amber-gold/20 text-amber-gold border border-amber-gold/30">Geospatial Tech</span>
+                                <i class="fa-solid fa-terminal text-slate-400"></i>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold text-white mb-2">Linux & GIS Route Modeling</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Utilizing open-source geospatial tools to map off-grid trails, render topography, and model off-road itineraries across complex desert and mountain terrain.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">Ubuntu Linux</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">QGIS</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">GPX Analytics</span>
+                                <span class="px-2 py-0.5 rounded text-[11px] bg-navy-900 text-slate-300">Data Architecture</span>
+                            </div>
+                            <div class="text-xs text-amber-gold font-medium flex items-center gap-1">
+                                <span>Custom Topographic Mapping</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Impact & Non-Profit Spotlight -->
+        <section id="community" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden border border-amber-gold/30">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8 space-y-4">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-gold/20 text-amber-gold border border-amber-gold/40">
+                            <i class="fa-solid fa-hand-holding-heart"></i> Non-Profit Leadership
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white">
+                            Motorcycle Relief Project
+                        </h2>
+                        <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                            As a Board Member for the <strong>Motorcycle Relief Project (MRP)</strong>, Buster works actively to support veterans and first responders suffering from PTSD and operational stress. Through structured multi-day motorcycle relief rides in scenic locations, MRP helps participants decompress, build lasting camaraderie, and learn positive strategies for managing trauma.
+                        </p>
+                        <div class="pt-2 flex flex-wrap gap-4 text-xs sm:text-sm font-medium text-slate-200">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-gold"></i>
+                                <span>501(c)(3) Registered Charity</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-amber-gold"></i>
+                                <span>Veteran & First Responder Relief Rides</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-4 flex flex-col items-center justify-center p-6 bg-navy-900/80 rounded-2xl border border-navy-700 text-center">
+                        <div class="w-16 h-16 rounded-full bg-amber-gold/20 text-amber-gold flex items-center justify-center text-2xl mb-3">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-lg text-white">Honoring Service</h4>
+                        <p class="text-xs text-slate-400 mt-1 mb-4">Supporting those who serve through structured adventure therapy.</p>
+                        <div class="w-full bg-navy-800 py-2 px-4 rounded-lg text-xs font-bold text-amber-gold">
+                            Active Board Member
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-navy-800 py-8 text-xs text-slate-400">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-heading font-bold text-slate-200">Richard "Buster" Christenson II</span>
+                <span>•</span>
+                <span>Queen Creek, AZ</span>
+            </div>
+            <p>© 2026 Richard Christenson II. IT Leadership & Veteran Profile.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Filtering Script -->
+    <script>
+        function filterHobbies(category) {
+            const cards = document.querySelectorAll('.hobby-card');
+            const buttons = document.querySelectorAll('.hobby-filter-btn');
+
+            // Reset active button state
+            buttons.forEach(btn => btn.classList.remove('active-tab'));
+            document.getElementById(`btn-${category}`).classList.add('active-tab');
+
+            // Show/Hide cards with animation feel
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.style.display = 'flex';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 50);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(10px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 200);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
